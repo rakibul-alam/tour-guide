@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Destino</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/fontawesome-all.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-transparent">
+                <div class="header-menu">
+                    <div class="float-left navbar-expand">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#in">Sign In</a></li>
+                            <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#out">Register</a></li>
+                            <!--<li class="nav-item"><a href="" class="nav-link">Buy Tickets</a></li>-->
+                        </ul>
+                    </div>
+                    <div class="float-right navbar-expand">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-twitter-square"></i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-google-plus-square"></i></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="main-menu">
+                    <div class="navbar-expand-md">
+                        <nav class="navbar ptb-0" id="myMenu2">
+                            <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo" class="logo-img"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myMenu">
+                                <span class="fa fa-bars fa-1x text-muted"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="myMenu">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                                    <li class="nav-item"><a href="packages.html" class="nav-link">Packages</a></li>
+                                    <li class="nav-item"><a href="hotels.html" class="nav-link">Hotels</a></li>
+                                    <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Blogs</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="dropdown.html" class="dropdown-item">Gallery</a></li>
+                                            <li><a href="dropdown.html" class="dropdown-item">Review</a></li>
+                                            <li><a href="dropdown.html" class="dropdown-item">Features</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="text-center text-light pt-5">
+                    <h1>Welcome to <b class="text-warning">le destino!</b></h1>
+                    <p>What are you looking for?</p>
+                    <a href="packages.html" class="btn btn-outline-info">Packages</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="jumbotron m-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-transparent">
+                    <div class="text-center">
+                        <h1>
+                            Get <span class="text-danger font-weight-bold">30%</span> discount for Eid-Ul-Fitur<br>
+                            in all ready <span><a href="packages.html" class="jumb">Packages</a></span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+                    <div class="text-center text-dark">
+                        <h3>Find the Adventure of a lifetime</h3>
+                    </div>
+                    <div class="text-muted text-center">
+                        <p>” The real voyage of discovery consists not in seeking new landscapes, but in having new eyes.” ~ Marcel Proust</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-section-bg mt-3 mb-3">
+                <div class="row">
+                    <div class="offset-2 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8 offset-2">
+                        <div class="text-white">
+                            <form action="#" id="find_form" method="post">
+                                <div>
+                                    <div>Where to go!</div>
+                                    <input type="text" class="form-control form-control-md" required="required" placeholder="Keyword here">
+                                </div>
+                                <div>
+                                    <div>Adventure type:</div>
+                                    <select name="adventure" id="adventure" class="form-control form-control-md">
+                                        <option>Hill</option>
+                                        <option>Sea</option>
+                                        <option>Waterfall</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <div>Min price</div>
+                                    <select name="min_price" id="min_price" class="form-control form-control-md">
+                                        <option>--Enter a Price---</option>
+                                        <option>6000 tk</option>
+                                        <option>7000 tk</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <div>Max Price</div>
+                                    <select name="max_price" id="max_price" class="form-control form-control-md">
+                                        <option>--Enter a Price---</option>
+                                        <option>6000 tk</option>
+                                        <option>7000 tk</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <div>Trip Duration</div>
+                                    <select name="max_price" id="duration" class="form-control form-control-md">
+                                        <option>--Choose a Package--</option>
+                                        <option>2 day & 3 night</option>
+                                    </select>
+                                </div>
+                                <div class="text-center pt-3">
+                                    <button type="button" class="btn btn-info btn-block">Find</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 pt-3 pb-3">
+                    <div class="text-center text-dark">
+                        <h3>Popular Destination</h3>
+                    </div>
+                    <div class="text-muted text-center">
+                        <p>"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart. ~ Hellen"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="">
+                        <img src="images/bisanakandi.jpg" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Bisanakandi, Shylet</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div>
+                        <img src="images/rangmati.jpg" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Rangamati, Chittagong</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div>
+                        <img src="images/Jaganath-Temple-Kathmandu-Nepal.jpg" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Jaganath, Nepal</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div>
+                        <img src="images/bhutan.jpg" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Hill City, Bhutan</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 mt-3">
+                    <div>
+                        <img src="images/bisanakandi.jpg" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Bisanakandi, Shylet</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 mt-3">
+                    <div>
+                        <img src="images/rangmati.jpg" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Rangamati, Chittagong</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 mt-3">
+                    <div>
+                        <img src="images/Jaganath-Temple-Kathmandu-Nepal.jpg" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Jaganath, Nepal</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 mt-3">
+                    <div>
+                        <img src="images/bhutan.jpg" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Hill City, Bhutan</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3 pt-3 pb-3">
+                    <div class="text-center text-dark">
+                        <h3>Other issues we can help you with</h3>
+                    </div>
+                    <div class="text-muted text-center">
+                        <p>“Travel doesn't become adventure until you leave yourself behind” ~ Matry Rubin</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 pt-3 pb-3">
+                    <div class="tranport-feature">
+                        <img src="images/bus.jpg" alt="transport" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Bus Tickets</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 pt-3 pb-3">
+                    <div class="tranport-feature">
+                        <img src="images/train.jpg" alt="transport" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Rail Tickets</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 pt-3 pb-3">
+                    <div class="tranport-img">
+                        <img src="images/ship.jpg" alt="transport" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Cruise Tickets</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-12 pt-3 pb-3">
+                    <div class="tranport-feature">
+                        <img src="images/plane.jpg" alt="transport" class="img-responsive">
+                    </div>
+                    <div class="transport-header pt-2">
+                        <a href="" target="_blank">
+                            <span class="anchor-wrap">
+                                <span class="wrapBG"></span>
+                                <h5 class="pl-3 wrap-header">Plane Tickets</h5>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-6 col-xs-12 mt-3 pt-3 pb-3">
+                    <div class="text-dark">
+                        <h3>Did not find your Package?<br>
+                            Feel free to ask us.<br>
+                            We‘ll make it for you </h3>
+                    </div>
+                    <div class="text-muted">
+                        <!--<p>”All you need is the plan, the road map, and the courage to press on to your destination." ~ Earl</p>-->
+                        <button type="button" class="btn btn-secondary">Request For Package</button>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-7 col-sm-6 col-xs-12 pt-3 pb-3">
+                    <img src="images/Panam%20City.jpg" alt="image" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5 pt-3 pb-3">
+                    <div class="text-center text-dark">
+                        <h3>Review From Our Customers</h3>
+                    </div>
+                    <div class="text-muted text-center">
+                        <p>"You are what you do, not what you say you'll do." ~ Carl</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="review-user mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="text-light mt-5 mb-2">
+                            <h1>Happy Traveler</h1>
+                            <p>Best Wishes From Our Happy Customers.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <div class="review-user-cmmnt">
+                            <img src="images/rkb-1.jpg" class="stamp-img" alt="stamp">
+                            <div class="float-left text-light mt-3">
+                                <h5 class="m-0">Rakibul Alam</h5>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                            <div class="float-left p-3 text-light">
+                                <p class="text-justify">"The agency’s understanding of customer requirement is unparalleled in the industry."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-5">
+                        <div class="review-user-cmmnt mt-5">
+                            <img src="images/rkb-2.JPG" class="stamp-img" alt="stamp">
+                            <div class="float-left text-light mt-3">
+                                <h5 class="m-0">Rakibul Alam</h5>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                            <div class="float-left p-3 text-light">
+                                <!--<p class="text-justify">"The agency’s understanding of customer requirement is unparalleled in the industry."</p>-->
+                                <p class="text-justify">"Le destino is simply the best out there. I have used their service multiple times and was completely satisfied every time. The whole TBBD team was really friendly and forthcoming for all our needs. "</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer-bg">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="pt-5">
+                    <div class="bigfooter-header">
+                        <h6>About le destino</h6>
+                    </div>
+                    <div class="bigfooter-para">
+                        <p>It'll help you to reach your destination where you end up but the mishaps and memories you create along the way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="pt-5">
+                    <div class="bigfooter-header">
+                        <h6>Navigation Links</h6>
+                    </div>
+                    <div class="bigfooter-para">
+                        <!--<p>It'll help you to reach your destination where you end up but the mishaps and memories you create along the way.</p>-->
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="packages.html" class="nav-link">Packages</a></li>
+                            <li class="nav-item"><a href="hotels.html" class="nav-link">Hotels</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="pt-5">
+                    <div class="bigfooter-header">
+                        <h6>Newsettler</h6>
+                    </div>
+                    <div class="bigfooter-para">
+                        <p>For business professionals caught between high OEM price and mediocre print and graphic output. </p>
+                        <div class="input-group pb-2">
+                            <input type="text" class="form-control form-control-sm bg-transparent" placeholder="Email Address!">
+                            <div class="input-group-append bg-success">
+                                <button type="button" class="btn btn-outline-dark"><img src="images/subscribe.png" alt="subscribe" class="icon-img"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="pt-5">
+                    <div class="bigfooter-header">
+                        <h6>Instafeed</h6>
+                    </div>
+                    <div class="bigfooter-para">
+                        <a href=""><img src="images/bandarban.jpg" alt="instafeed" class="instafeed-img"/></a>
+                        <a href=""><img src="images/bisanakandi.jpg" alt="instafeed" class="instafeed-img"/></a>
+                        <a href=""><img src="images/Coxs-bazar-the-worlds-Longest-Beach.jpg" alt="instafeed" class="instafeed-img"/></a>
+                        <a href=""><img src="images/sajek.jpg" alt="instafeed" class="instafeed-img"/></a>
+                        <a href=""><img src="images/saintmartin.jpg" alt="instafeed" class="instafeed-img"/></a>
+                        <a href=""><img src="images/rangmati.jpg" alt="instafeed" class="instafeed-img"/></a>
+                        <a href=""><img src="images/kuwakata.jpg" alt="instafeed" class="instafeed-img"/></a>
+                        <a href=""><img src="images/bandarban.jpg" alt="instafeed" class="instafeed-img"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="bg-white">
+
+        <div class="row pt-2">
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <p class="text-light text-center">@Copyright 2020 all right reserved <span>|</span> This site is designed with <i class="fa fa-heart text-danger"></i> by Rakibul Alam</p>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="text-center">
+                    <a href=""><i class="fab fa-facebook-square text-light ml-2"></i></a>
+                    <a href=""><i class="fab fa-twitter-square text-light ml-2"></i></a>
+                    <a href=""><i class="fab fa-google-plus-square text-light ml-2"></i></a>
+                    <a href=""><i class="fab fa-instagram text-light ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="in">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Sign In</h4>
+                <button type="button" class="close" data-dismiss="modal"><img src="images/erase-512.png" class="icon-img"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><img src="images/Document.png" class="icon-bar"></span>
+                            </div>
+                            <input type="text" name="email" placeholder="username or email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><img src="images/5lock.png" class="icon-bar"></span>
+                            </div>
+                            <input type="password" name="password" placeholder="password" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success btn-block"><img src="images/check-in-512.png" class="icon-img"> Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="out">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Sign Up</h4>
+                <button type="button" class="close" data-dismiss="modal"><img src="images/erase-512.png" class="icon-img"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="" method="">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">First Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control form-control-md">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Last Name</label>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control form-control-md">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Email Address</label>
+                                <div class="col-md-9">
+                                    <input type="email" class="form-control form-control-md">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">District Name</label>
+                                <div class="col-md-9">
+                                    <select class="form-control-md">
+                                        <option>----Select District Name----</option>
+                                        <option value="Dhaka">Dhaka</option>
+                                        <option value="Chitagong">Chitagong</option>
+                                        <option value="Dohar">Dohar</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3">Gender Info</label>
+                                <div class="col-md-9">
+                                    <input type="radio" name="gender" value="Male"> Male
+                                    <input type="radio" name="gender" value="Female"> Female
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3">Image</label>
+                                <div class="col-md-9">
+                                    <input type="file" class="form-control-file">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label">Date of Birth</label>
+                                <div class="col-md-9">
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="form-group row">
+                                <label class="col-md-3"></label>
+                                <div class="col-md-9">
+                                    <input type="checkbox" value="1"> I agree with all Information
+                                </div>
+                            </div>
+
+
+                            <input type="button" value="submit" class="btn btn-outline-success btn-block">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
